@@ -1,0 +1,145 @@
+@font-face {
+  font-family: New Rodin;
+  src: url("NewRodin.otf") format('opentype');
+}
+
+@font-face {
+  font-family: New Rodin;
+  src: url("NewRodin Pro B.otf") format('opentype');
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  /*background-color: #f8f9fa;*/
+  background-color: #161a1d;
+  font-family: 'New Rodin', sans-serif;
+  letter-spacing: .07em;
+  color: white;
+  font-size: 20px;
+  line-height: 32px;
+
+  margin-top: 0px;
+  padding-top: 0px;
+}
+p{
+  font-family: 'New Rodin', sans-serif;
+  letter-spacing: .07em;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin: 0px;
+  display: block;
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px black;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+}
+.narration{
+  font-size: 14px;
+  font-style: italic;
+  color: grey;
+  text-align: center;
+  margin: 5em;
+  -webkit-text-stroke: 0px black;
+}
+a:link{
+    color: grey;
+    text-decoration: none;
+}
+a:visited{
+    color: grey;
+    text-decoration: none;
+}
+br.break{
+  display: block;
+  margin: 4em;
+}
+h1{
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: -50px;
+  padding-top: 50px;
+}
+h2{
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+}
+h3{
+  font-size: 20px;
+  font-weight: 100;
+  /*letter-spacing: 1px;*/
+  paint-order: stroke fill;
+  -webkit-text-stroke: 3px black;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  display: inline-block;
+  block-size: max-content;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-right: 4px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url("art/name_line.gif");
+  /*border-top: 1px solid #dee2e6;*/
+}
+
+h4 {
+  font-family: 'New Rodin', sans-serif;
+  font-size: 14;
+  letter-spacing: .03em;
+  padding: 0px;
+  margin-top: -2em;
+  margin-bottom: 4em;
+  color: black;
+  text-align: center;
+}
+
+.footer {
+  font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: auto;
+  margin-top: -100px;
+  width: 100%;
+  color: #adb5bd;
+  text-align: center;
+}
+.imgpad{
+  padding: 10px 10px 10px;
+}
+.page {
+    width: 900px;
+    margin: auto;
+    padding-top: 0px;
+}
+.chapter-container {
+  background-color: white;
+  border-bottom: .4em solid #6c757d;
+  margin: auto;
+  margin-bottom: 5em;
+  margin-top: -1em;
+  width: 800px;
+  /*border-radius: 5px;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #dee2e6;*/
+}
+div.speech {
+  width: auto;
+  background-color: #343a40;
+  /*border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;*/
+  padding: 40px 0px;
+  margin: 0px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 150px;
+}
