@@ -17,9 +17,9 @@ body{
   font-family: 'New Rodin', sans-serif;
   letter-spacing: .07em;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 32px;
-
+  text-align: center;
   margin-top: 0px;
   padding-top: 0px;
 }
@@ -31,10 +31,10 @@ p{
   text-align: center;
   margin: 0px;
   display: block;
-  paint-order: stroke fill;
+  /*paint-order: stroke fill;
   -webkit-text-stroke: 3px black;
   stroke-linecap: butt;
-  stroke-linejoin: round;
+  stroke-linejoin: round;*/
 }
 .narration{
   font-size: 14px;
@@ -72,23 +72,28 @@ h2{
     text-align: center;
 }
 h3{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 100;
   /*letter-spacing: 1px;*/
-  paint-order: stroke fill;
+  /*paint-order: stroke fill;
   -webkit-text-stroke: 3px black;
   stroke-linecap: butt;
-  stroke-linejoin: round;
+  stroke-linejoin: round;*/
   display: inline-block;
-  block-size: max-content;
+  line-height: 1em;
   margin-bottom: 10px;
   margin-top: -10px;
   padding-left: 50px;
-  padding-right: 4px;
-  background-repeat: no-repeat;
+  padding-right: .15em;
+  padding-bottom: -10px;
+  text-shadow: 0em .08em #343a40;
+  /*background-repeat: no-repeat;
   background-position: bottom right;
   background-image: url("art/name_line.gif");
-  /*border-top: 1px solid #dee2e6;*/
+  background-size: 10em .15em;*/
+  border-bottom: 0.1em white solid;
+  text-align: left;
+
 }
 
 h4 {
@@ -107,7 +112,7 @@ h4 {
   font-size: 12px;
   display: block;
   width: auto;
-  margin-top: -100px;
+  margin-top: -5em;
   width: 100%;
   color: #adb5bd;
   text-align: center;
@@ -142,4 +147,16 @@ div.speech {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 150px;
+  text-align: left;
+}
+img {
+ width: 20em;
+ display: inline-block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 2em;
+ margin-bottom: 2em;
+
+
+
 }
