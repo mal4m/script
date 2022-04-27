@@ -126,6 +126,7 @@ h4 {
     padding-top: 0px;
 }
 .chapter-container {
+    counter-reset: custom-counter;
   background-color: white;
   border-bottom: .4em solid #6c757d;
   margin: auto;
@@ -156,7 +157,21 @@ img {
  margin-right: auto;
  margin-top: 2em;
  margin-bottom: 2em;
+}
 
-
-
+.speech::before {
+  counter-increment: custom-counter+1;
+  content: counter(custom-counter)"";
+  position: absolute;
+  display: inline-block;
+  width: 2em;
+  color: #343a40;
+  font-size: 12px;
+  font-family: DejaVu Sans Mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  margin-right: 0em;
+  margin-left: -2.5em;
+  vertical-align: top;
 }
