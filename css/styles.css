@@ -29,12 +29,17 @@ p{
   color: white;
   font-weight: 100;
   text-align: center;
-  margin: 0px;
+  margin: 0px 20px;
   display: block;
   /*paint-order: stroke fill;
   -webkit-text-stroke: 3px black;
   stroke-linecap: butt;
   stroke-linejoin: round;*/
+}
+.datalog{
+  text-align: justify;
+  margin: 0px 50px;
+  font-size: 14px;
 }
 .narration{
   font-size: 14px;
@@ -68,7 +73,7 @@ h2{
     margin-top: 3em;
     font-weight: bold;
     font-size: 24px;
-    color: black;
+    color: #161a1d;
     text-align: center;
 }
 h3{
@@ -144,11 +149,15 @@ div.speech {
   /*border-top: 1px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;*/
   padding: 40px 0px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 15px 0px;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 150px;
+  background-size: 1600px;
   text-align: left;
+  text-shadow: 0em .08em #000;
+
 }
 img {
  width: 20em;
@@ -157,6 +166,7 @@ img {
  margin-right: auto;
  margin-top: 2em;
  margin-bottom: 2em;
+ border-radius: .15em;
 }
 
 .speech::before {
@@ -173,5 +183,184 @@ img {
   text-align: right;
   margin-right: 0em;
   margin-left: -2.5em;
+  margin-top: -1.5em;
   vertical-align: top;
+}
+.cross {
+    background: url("art/cross.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.triangle {
+    background: url("art/triangle.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.square {
+    background: url("art/square.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.circle {
+    background: url("art/circle.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.dpad {
+    background: url("art/dpad.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.l1 {
+    background: url("art/l1.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.l2 {
+    background: url("art/l2.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.l3 {
+    background: url("art/l3.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.lstick {
+    background: url("art/lstick.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.r1 {
+    background: url("art/r1.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.r2 {
+    background: url("art/r2.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.r3 {
+    background: url("art/r3.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.rstick {
+    background: url("art/rstick.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.start {
+    background: url("art/start.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.select {
+    background: url("art/select.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.dright {
+    background: url("art/dright.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.dleftright {
+    background: url("art/dleftright.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.blizzardblue {color: BlizzardBlue;}
+.gold { color: Gold; }
+.green { color: Green;}
+.purple { color: Purple; }
+.red {color: Red;}
+.rose { color: Rose;}
+.sandorange {color: SandOrange;}
+.skyblue {color: SkyBlue;}
+.whitegray {color: WhiteGray;}
+.whitegreen {color: WhiteGreen;}
+.whitepurple {color: WhitePurple;}
+.yellow { color: Yellow;}
+
+.rev0 {
+    background-image: url("rev/00.jpg");
+}
+.rev1 {
+    background-image: url("rev/01.jpg");
+}
+.rev2 {
+    background-image: url("rev/02.jpg");
+}
+.rev3 {
+    background-image: url("rev/03.jpg");
 }
