@@ -1,0 +1,366 @@
+@font-face {
+  font-family: New Rodin;
+  src: url("NewRodin.otf") format('opentype');
+}
+
+@font-face {
+  font-family: New Rodin;
+  src: url("NewRodin Pro B.otf") format('opentype');
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  /*background-color: #f8f9fa;*/
+  background-color: #161a1d;
+  font-family: 'New Rodin', sans-serif;
+  letter-spacing: .07em;
+  color: white;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+p{
+  font-family: 'New Rodin', sans-serif;
+  letter-spacing: .07em;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin: 0px 20px;
+  display: block;
+  /*paint-order: stroke fill;
+  -webkit-text-stroke: 3px black;
+  stroke-linecap: butt;
+  stroke-linejoin: round;*/
+}
+.datalog{
+  text-align: justify;
+  margin: 0px 50px;
+  font-size: 14px;
+}
+.narration{
+  font-size: 14px;
+  font-style: italic;
+  color: grey;
+  text-align: center;
+  margin: 5em;
+  -webkit-text-stroke: 0px black;
+}
+a:link{
+    color: grey;
+    text-decoration: none;
+}
+a:visited{
+    color: grey;
+    text-decoration: none;
+}
+br.break{
+  display: block;
+  margin: 4em;
+}
+h1{
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: -50px;
+  padding-top: 50px;
+}
+h2{
+    margin-top: 3em;
+    font-weight: bold;
+    font-size: 24px;
+    color: #161a1d;
+    text-align: center;
+}
+h3{
+  font-size: 16px;
+  font-weight: 100;
+  /*letter-spacing: 1px;*/
+  /*paint-order: stroke fill;
+  -webkit-text-stroke: 3px black;
+  stroke-linecap: butt;
+  stroke-linejoin: round;*/
+  display: inline-block;
+  line-height: 1em;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-right: .15em;
+  padding-bottom: -10px;
+  text-shadow: 0em .08em #343a40;
+  /*background-repeat: no-repeat;
+  background-position: bottom right;
+  background-image: url("art/name_line.gif");
+  background-size: 10em .15em;*/
+  border-bottom: 0.1em white solid;
+  text-align: left;
+
+}
+
+h4 {
+  font-family: 'New Rodin', sans-serif;
+  font-size: 14;
+  letter-spacing: .03em;
+  padding: 0px;
+  margin-top: -2em;
+  margin-bottom: 4em;
+  color: black;
+  text-align: center;
+}
+
+.footer {
+  font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: auto;
+  margin-top: -5em;
+  width: 100%;
+  color: #adb5bd;
+  text-align: center;
+}
+.imgpad{
+  padding: 10px 10px 10px;
+}
+.page {
+    width: 900px;
+    margin: auto;
+    padding-top: 0px;
+}
+.chapter-container {
+    counter-reset: custom-counter;
+  background-color: white;
+  border-bottom: .4em solid #6c757d;
+  margin: auto;
+  margin-bottom: 5em;
+  margin-top: -1em;
+  width: 800px;
+  /*border-radius: 5px;
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: #dee2e6;*/
+}
+div.speech {
+  width: auto;
+  background-color: #343a40;
+  /*border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;*/
+  padding: 40px 0px;
+  margin: 0px 0px 15px 0px;
+  background-blend-mode: overlay;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  text-align: left;
+  text-shadow: 0em .08em #000;
+
+}
+img {
+ width: 20em;
+ display: inline-block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 2em;
+ margin-bottom: 2em;
+ border-radius: .15em;
+}
+
+.speech::before {
+  counter-increment: custom-counter+1;
+  content: counter(custom-counter)"";
+  position: absolute;
+  display: inline-block;
+  width: 2em;
+  color: #343a40;
+  font-size: 12px;
+  font-family: DejaVu Sans Mono, monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  margin-right: 0em;
+  margin-left: -2.5em;
+  margin-top: -1.5em;
+  vertical-align: top;
+}
+.cross {
+    background: url("art/cross.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.triangle {
+    background: url("art/triangle.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.square {
+    background: url("art/square.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.circle {
+    background: url("art/circle.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.dpad {
+    background: url("art/dpad.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.l1 {
+    background: url("art/l1.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.l2 {
+    background: url("art/l2.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.l3 {
+    background: url("art/l3.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.lstick {
+    background: url("art/lstick.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.r1 {
+    background: url("art/r1.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.r2 {
+    background: url("art/r2.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.r3 {
+    background: url("art/r3.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.rstick {
+    background: url("art/rstick.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.start {
+    background: url("art/start.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.select {
+    background: url("art/select.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.dright {
+    background: url("art/dright.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.dleftright {
+    background: url("art/dleftright.png");
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: -8px;
+    /* Other styles here */
+}
+.blizzardblue {color: BlizzardBlue;}
+.gold { color: Gold; }
+.green { color: Green;}
+.purple { color: Purple; }
+.red {color: Red;}
+.rose { color: Rose;}
+.sandorange {color: SandOrange;}
+.skyblue {color: SkyBlue;}
+.whitegray {color: WhiteGray;}
+.whitegreen {color: WhiteGreen;}
+.whitepurple {color: WhitePurple;}
+.yellow { color: Yellow;}
+
+.rev0 {
+    background-image: url("rev/00.jpg");
+}
+.rev1 {
+    background-image: url("rev/01.jpg");
+}
+.rev2 {
+    background-image: url("rev/02.jpg");
+}
+.rev3 {
+    background-image: url("rev/03.jpg");
+}
